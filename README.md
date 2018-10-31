@@ -2,6 +2,8 @@
 
 Tappy is a console (text user interface) based tap BPM (beats per minute) meter.
 
+[![asciicast](https://asciinema.org/a/4VIzywVeQ0vlj9RGTswSxxfRh.png)](https://asciinema.org/a/4VIzywVeQ0vlj9RGTswSxxfRh)
+
 ## Installation
 
 If you have Cargo installed, installation is as simple as running `cargo install tappy`.
