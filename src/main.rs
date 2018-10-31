@@ -1,9 +1,9 @@
 extern crate cursive;
 
-use cursive::Cursive;
 use cursive::event::{Event, Key};
 use cursive::theme::{self, BaseColor, Color};
 use cursive::views::{Dialog, TextView};
+use cursive::Cursive;
 
 use std::cell::RefCell;
 use std::mem;
@@ -61,14 +61,18 @@ fn render_layer(siv: &mut Cursive, state: &State) {
             let avg = state.avg_bpm().unwrap();
             let mut content = format!(
                 "Current BPM:   {:.2}\nAverage BPM:   {:.2}\nNearest whole: {}\n",
-                bpm, avg, avg.round());
+                bpm,
+                avg,
+                avg.round()
+            );
             content.push_str("\nTap BACKSPACE to reset");
             TextView::new(content)
-        },
+        }
         None => TextView::new(
             "Tap SPACE at least twice to measure bpm.
              Tap Q to quit.
-            ".trim()),
+            ".trim(),
+        ),
     };
     siv.add_layer(Dialog::around(layer));
 }
