@@ -7,7 +7,7 @@ Tappy is a console (text user interface) based tap BPM (beats per minute) meter.
 ## Installation
 
 If you have Cargo installed, installation is as simple as running `cargo install tappy`.
-Tappy will work on any platform supported by [Termion](https://github.com/redox-os/termion)
+Tappy will work on any platform supported by [Termion](https://github.com/redox-os/termion).
 
 Standalone binary releases will be coming soon.
 
